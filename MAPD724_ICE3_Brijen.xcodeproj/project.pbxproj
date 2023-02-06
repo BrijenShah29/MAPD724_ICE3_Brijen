@@ -15,6 +15,15 @@
 		8178C61E2990881B006409D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8178C61C2990881B006409D2 /* Main.storyboard */; };
 		8178C6202990881D006409D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8178C61F2990881D006409D2 /* Assets.xcassets */; };
 		8178C6232990881D006409D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8178C6212990881D006409D2 /* LaunchScreen.storyboard */; };
+		8178C62C2990883A006409D2 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C62A2990883A006409D2 /* ScoreManager.swift */; };
+		8178C62D2990883A006409D2 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C62B2990883A006409D2 /* CollisionManager.swift */; };
+		8178C65929908851006409D2 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C65529908850006409D2 /* Island.swift */; };
+		8178C65A29908851006409D2 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C65629908850006409D2 /* Cloud.swift */; };
+		8178C65B29908851006409D2 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C65729908850006409D2 /* Ocean.swift */; };
+		8178C65C29908851006409D2 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C65829908850006409D2 /* Plane.swift */; };
+		8178C67629908860006409D2 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C67329908860006409D2 /* GameProtocol.swift */; };
+		8178C67729908860006409D2 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C67429908860006409D2 /* GameObject.swift */; };
+		8178C67829908860006409D2 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178C67529908860006409D2 /* Layer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,32 @@
 		8178C61D2990881B006409D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8178C61F2990881D006409D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8178C6222990881D006409D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8178C62A2990883A006409D2 /* ScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		8178C62B2990883A006409D2 /* CollisionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
+		8178C65529908850006409D2 /* Island.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		8178C65629908850006409D2 /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		8178C65729908850006409D2 /* Ocean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		8178C65829908850006409D2 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		8178C65F29908855006409D2 /* engine.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = engine.ogg; sourceTree = "<group>"; };
+		8178C66029908855006409D2 /* thunder.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder.ogg; sourceTree = "<group>"; };
+		8178C66129908856006409D2 /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = engine.mp3; sourceTree = "<group>"; };
+		8178C66229908856006409D2 /* yay.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = yay.ogg; sourceTree = "<group>"; };
+		8178C66329908856006409D2 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunder.mp3; sourceTree = "<group>"; };
+		8178C66429908857006409D2 /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yay.mp3; sourceTree = "<group>"; };
+		8178C66629908857006409D2 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
+		8178C66829908858006409D2 /* startButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startButton.png; sourceTree = "<group>"; };
+		8178C66929908859006409D2 /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean.png; sourceTree = "<group>"; };
+		8178C66A29908859006409D2 /* plane3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane3.png; sourceTree = "<group>"; };
+		8178C66B2990885A006409D2 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		8178C66C2990885A006409D2 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		8178C66D2990885A006409D2 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
+		8178C66E2990885B006409D2 /* island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = island.png; sourceTree = "<group>"; };
+		8178C66F2990885B006409D2 /* plane1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane1.png; sourceTree = "<group>"; };
+		8178C6702990885B006409D2 /* plane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane2.png; sourceTree = "<group>"; };
+		8178C6712990885C006409D2 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		8178C67329908860006409D2 /* GameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		8178C67429908860006409D2 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		8178C67529908860006409D2 /* Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +94,10 @@
 		8178C6112990881B006409D2 /* MAPD724_ICE3_Brijen */ = {
 			isa = PBXGroup;
 			children = (
+				8178C67229908860006409D2 /* Core */,
+				8178C65D29908854006409D2 /* Assets */,
+				8178C65429908850006409D2 /* GameObjects */,
+				8178C6292990883A006409D2 /* Managers */,
 				8178C6122990881B006409D2 /* AppDelegate.swift */,
 				8178C6142990881B006409D2 /* GameScene.sks */,
 				8178C6162990881B006409D2 /* Actions.sks */,
@@ -69,6 +108,87 @@
 				8178C6212990881D006409D2 /* LaunchScreen.storyboard */,
 			);
 			path = MAPD724_ICE3_Brijen;
+			sourceTree = "<group>";
+		};
+		8178C6292990883A006409D2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8178C62A2990883A006409D2 /* ScoreManager.swift */,
+				8178C62B2990883A006409D2 /* CollisionManager.swift */,
+			);
+			name = Managers;
+			path = "../../MAPD724-W2023-ICE3-main/MAPD724-W2023-ICE3/Managers";
+			sourceTree = "<group>";
+		};
+		8178C65429908850006409D2 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8178C65529908850006409D2 /* Island.swift */,
+				8178C65629908850006409D2 /* Cloud.swift */,
+				8178C65729908850006409D2 /* Ocean.swift */,
+				8178C65829908850006409D2 /* Plane.swift */,
+			);
+			name = GameObjects;
+			path = "../../MAPD724-W2023-ICE3-main/MAPD724-W2023-ICE3/GameObjects";
+			sourceTree = "<group>";
+		};
+		8178C65D29908854006409D2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8178C66729908858006409D2 /* images */,
+				8178C65E29908854006409D2 /* audio */,
+				8178C66529908857006409D2 /* fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8178C65E29908854006409D2 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				8178C66029908855006409D2 /* thunder.ogg */,
+				8178C66229908856006409D2 /* yay.ogg */,
+				8178C65F29908855006409D2 /* engine.ogg */,
+				8178C66129908856006409D2 /* engine.mp3 */,
+				8178C66329908856006409D2 /* thunder.mp3 */,
+				8178C66429908857006409D2 /* yay.mp3 */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		8178C66529908857006409D2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8178C66629908857006409D2 /* Dock51.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		8178C66729908858006409D2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8178C66A29908859006409D2 /* plane3.png */,
+				8178C6702990885B006409D2 /* plane2.png */,
+				8178C66F2990885B006409D2 /* plane1.png */,
+				8178C6712990885C006409D2 /* backButton.png */,
+				8178C66C2990885A006409D2 /* plane.png */,
+				8178C66E2990885B006409D2 /* island.png */,
+				8178C66B2990885A006409D2 /* cloud.png */,
+				8178C66D2990885A006409D2 /* nextButton.png */,
+				8178C66929908859006409D2 /* ocean.png */,
+				8178C66829908858006409D2 /* startButton.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8178C67229908860006409D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8178C67329908860006409D2 /* GameProtocol.swift */,
+				8178C67429908860006409D2 /* GameObject.swift */,
+				8178C67529908860006409D2 /* Layer.swift */,
+			);
+			name = Core;
+			path = "../../MAPD724-W2023-ICE3-main/MAPD724-W2023-ICE3/Core";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8178C67729908860006409D2 /* GameObject.swift in Sources */,
+				8178C62C2990883A006409D2 /* ScoreManager.swift in Sources */,
+				8178C67629908860006409D2 /* GameProtocol.swift in Sources */,
+				8178C67829908860006409D2 /* Layer.swift in Sources */,
+				8178C65C29908851006409D2 /* Plane.swift in Sources */,
 				8178C6192990881B006409D2 /* GameScene.swift in Sources */,
+				8178C65929908851006409D2 /* Island.swift in Sources */,
+				8178C62D2990883A006409D2 /* CollisionManager.swift in Sources */,
+				8178C65B29908851006409D2 /* Ocean.swift in Sources */,
+				8178C65A29908851006409D2 /* Cloud.swift in Sources */,
 				8178C61B2990881B006409D2 /* GameViewController.swift in Sources */,
 				8178C6132990881B006409D2 /* AppDelegate.swift in Sources */,
 			);
